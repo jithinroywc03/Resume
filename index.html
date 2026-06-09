@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jithin Roy | Information Security Analyst</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#050505;
+color:#fff;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+width:100%;
+height:100%;
+background:
+radial-gradient(circle at 20% 20%,rgba(255,0,0,.12),transparent 30%),
+radial-gradient(circle at 80% 70%,rgba(255,0,0,.08),transparent 30%);
+z-index:-2;
+}
+
+.scanline{
+position:fixed;
+top:-100%;
+left:0;
+width:100%;
+height:100px;
+background:linear-gradient(to bottom,transparent,rgba(255,0,0,.08),transparent);
+animation:scan 8s linear infinite;
+pointer-events:none;
+z-index:999;
+}
+
+@keyframes scan{
+0%{top:-100px;}
+100%{top:100%;}
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:50px 20px;
+}
+
+.hero h1{
+font-size:4rem;
+font-family:'Orbitron',sans-serif;
+color:#ff2b2b;
+text-shadow:0 0 20px #ff0000;
+}
+
+.hero h2{
+margin-top:15px;
+font-size:1.6rem;
+font-weight:500;
+}
+
+.hero p{
+margin-top:20px;
+font-size:1rem;
+max-width:700px;
+margin-left:auto;
+margin-right:auto;
+color:#ccc;
+line-height:1.8;
+}
+
+.typing{
+color:#ff4d4d;
+font-family:'Orbitron',sans-serif;
+margin-top:20px;
+font-size:1.1rem;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:12px 25px;
+border:1px solid #ff2b2b;
+color:#fff;
+text-decoration:none;
+border-radius:6px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#ff2b2b;
+box-shadow:0 0 20px #ff2b2b;
+}
+
+section{
+padding:90px 0;
+}
+
+.section-title{
+font-family:'Orbitron',sans-serif;
+font-size:2rem;
+margin-bottom:30px;
+color:#ff2b2b;
+}
+
+.card{
+background:#101010;
+border:1px solid rgba(255,0,0,.15);
+padding:25px;
+border-radius:12px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 0 20px rgba(255,0,0,.25);
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#111;
+padding:18px;
+border-radius:10px;
+border-left:4px solid #ff2b2b;
+}
+
+.timeline{
+position:relative;
+padding-left:30px;
+}
+
+.timeline::before{
+content:"";
+position:absolute;
+left:0;
+top:0;
+width:2px;
+height:100%;
+background:#ff2b2b;
+}
+
+.timeline-item{
+margin-bottom:40px;
+position:relative;
+}
+
+.timeline-item::before{
+content:"";
+position:absolute;
+left:-37px;
+top:5px;
+width:14px;
+height:14px;
+background:#ff2b2b;
+border-radius:50%;
+box-shadow:0 0 15px #ff2b2b;
+}
+
+.company{
+color:#ff4d4d;
+font-weight:600;
+margin-bottom:5px;
+}
+
+ul{
+padding-left:20px;
+margin-top:10px;
+}
+
+li{
+margin-bottom:8px;
+color:#d5d5d5;
+}
+
+.cert-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact a{
+color:#ff4d4d;
+text-decoration:none;
+}
+
+footer{
+text-align:center;
+padding:30px;
+border-top:1px solid #222;
+color:#888;
+}
+
+.reveal{
+opacity:0;
+transform:translateY(30px);
+transition:1s;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:2.3rem;
+}
+.hero h2{
+font-size:1.2rem;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="scanline"></div>
+
+<section class="hero">
+<div class="container">
+<h1>JITHIN ROY W C</h1>
+
+<h2>Information Security Analyst</h2>
+
+<div class="typing" id="typing"></div>
+
+<p>
+4+ years of experience in Vulnerability Assessment and Penetration Testing (VAPT)
+across Web Applications, APIs, Mobile Applications and Network Infrastructure.
+Focused on identifying security weaknesses, validating remediation and helping
+organizations strengthen their security posture.
+</p>
+
+<a class="btn" href="https://www.linkedin.com/in/jithin-roy-799aa9242/" target="_blank">
+View LinkedIn
+</a>
+</div>
+</section>
+
+<section class="reveal">
+<div class="container">
+<h2 class="section-title">About Me</h2>
+
+<div class="card">
+<p>
+Cyber Security Professional with extensive experience in conducting security
+assessments, penetration testing and vulnerability management activities.
+Experienced in delivering actionable security recommendations and collaborating
+with stakeholders to improve overall security resilience.
+</p>
+</div>
+</div>
+</section>
+
+<section class="reveal">
+<div class="container">
+<h2 class="section-title">Technical Expertise</h2>
+
+<div class="skills">
+
+<div class="skill">Web Application Security Testing</div>
+<div class="skill">API Security Testing</div>
+<div class="skill">Mobile Application Security Testing</div>
+<div class="skill">Network Penetration Testing</div>
+<div class="skill">Thick Client Security Testing</div>
+<div class="skill">Vulnerability Management</div>
+<div class="skill">Security Assessment & Reporting</div>
+<div class="skill">Risk Analysis & Remediation Validation</div>
+
+</div>
+</div>
+</section>
+
+<section class="reveal">
+<div class="container">
+<h2 class="section-title">Professional Experience</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<div class="company">
+UST | Information Security Analyst
+</div>
+
+<p>Dec 2024 - Present</p>
+
+<ul>
+<li>Conduct security assessments across web, API, mobile and network environments.</li>
+<li>Perform vulnerability identification, validation and risk analysis activities.</li>
+<li>Deliver detailed technical reports and remediation guidance.</li>
+<li>Collaborate with stakeholders to strengthen security controls.</li>
+</ul>
+</div>
+
+<div class="timeline-item">
+<div class="company">
+Cyber PWN | Cyber Security Engineer
+</div>
+
+<p>Jul 2022 - Oct 2024</p>
+
+<ul>
+<li>Performed vulnerability assessments and penetration testing engagements.</li>
+<li>Executed testing across web applications, APIs, mobile applications and networks.</li>
+<li>Produced technical reports with risk ratings and remediation recommendations.</li>
+<li>Worked with development and operations teams to improve security posture.</li>
+</ul>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="reveal">
+<div class="container">
+<h2 class="section-title">Certifications</h2>
+
+<div class="cert-grid">
+
+<div class="card">Certified Ethical Hacker (CEH v12)</div>
+<div class="card">Certified Penetration Tester (CPT)</div>
+<div class="card">Mobile Application Penetration Testing</div>
+<div class="card">Android Application Security</div>
+<div class="card">Web Application Hacking</div>
+<div class="card">Network Penetration Testing</div>
+
+</div>
+</div>
+</section>
+
+<section class="reveal">
+<div class="container">
+<h2 class="section-title">Education</h2>
+
+<div class="card">
+<h3>Master of Technology (M.Tech)</h3>
+<p>Power Electronics and Drives</p>
+<p>Karunya University, Coimbatore, India</p>
+</div>
+
+</div>
+</section>
+
+<section class="reveal">
+<div class="container contact">
+<h2 class="section-title">Contact</h2>
+
+<p><strong>Phone:</strong> +91 8714514587</p>
+<p><strong>Email:</strong> wc.jithin@gmail.com</p>
+<p><strong>Location:</strong> Trivandrum, India</p>
+
+<br>
+
+<a href="https://www.linkedin.com/in/jithin-roy-799aa9242/" target="_blank">
+LinkedIn Profile
+</a>
+
+</div>
+</section>
+
+<footer>
+© 2026 Jithin Roy W C | Information Security Analyst
+</footer>
+
+<script>
+const texts = [
+"Web Application Security",
+"API Security Testing",
+"Mobile Security Testing",
+"Network Penetration Testing",
+"Vulnerability Assessment & Penetration Testing"
+];
+
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+(function type(){
+if(count === texts.length){
+count = 0;
+}
+
+currentText = texts[count];
+letter = currentText.slice(0, ++index);
+
+document.getElementById("typing").textContent = letter;
+
+if(letter.length === currentText.length){
+count++;
+index = 0;
+setTimeout(type, 1200);
+}else{
+setTimeout(type, 80);
+}
+})();
+
+const observer = new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("active");
+}
+});
+});
+
+document.querySelectorAll(".reveal").forEach(el=>{
+observer.observe(el);
+});
+</script>
+
+</body>
+</html>
